@@ -1,6 +1,6 @@
 ### SET FOLDER TO WATCH, FILES TO WATCH, SUBFOLDERS TO WATCH
 $watcher = New-Object System.IO.FileSystemWatcher
-$watcher.Path = $(Get-Location)
+$watcher.Path = $SOURCE_DIRECTORY
 $watcher.Filter = "*.*"
 $watcher.IncludeSubdirectories = $true
 $watcher.EnableRaisingEvents = $true
